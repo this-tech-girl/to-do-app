@@ -27,8 +27,8 @@ A simple, elegant, and interactive task scheduler web application built with van
 No installation required! Just clone or download the repo and open `index.html` in any modern browser.
 
 bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
+git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/this-tech-girl/to-do-app.git)
+cd to-do-app
 open index.html
 
 Or simply open the file directly.

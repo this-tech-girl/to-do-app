@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task Scheduler 📅</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Task Scheduler 📅</h1>
+
+    <label for="viewDate">Select Date: </label>
+    <input type="date" id="viewDate" />
+
+    <ul id="taskList"></ul>
+
+    <!-- Floating Add Button -->
+    <button id="addTaskBtn" class="plus-btn">+</button>
+  </div>
+
+  <!-- Modal for Adding Task -->
+  <div id="taskModal" class="modal">
+    <div class="modal-content">
+      <h2>New Task</h2>
+      <input id="taskText" type="text" placeholder="Task description" />
+      <input id="taskDate" type="date" />
+      <input id="taskTime" type="time" />
+      <select id="repeatOption">
+        <option value="none">No Repeat</option>
+        <option value="daily">Daily</option>
+        <option value="weekly">Weekly</option>
+        <option value="monthly">Monthly</option>
+        <option value="yearly">Yearly</option>
+      </select>
+      <button id="saveTask">Save</button>
+      <button id="closeModal">Cancel</button>
+    </div>
+  </div>
+
+  <script src="todo.js"></script>
+</body>
+</html>

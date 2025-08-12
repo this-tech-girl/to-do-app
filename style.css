@@ -1,0 +1,198 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+.container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  width: 400px;
+  box-shadow: 0 8px 30px rgba(102, 126, 234, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #4a3aff;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Date picker label & input */
+label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="text"]:focus,
+select:focus {
+  outline: none;
+  border-color: #4a3aff;
+  box-shadow: 0 0 6px #4a3affaa;
+}
+
+/* Task list */
+ul {
+  list-style: none;
+  max-height: 350px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+li {
+  background: #f5f5ff;
+  margin-bottom: 12px;
+  padding: 14px 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(74, 58, 255, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #e0dfff;
+}
+
+li span {
+  user-select: none;
+}
+
+/* Delete button */
+li button {
+  background: #ff4d6d;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+li button:hover {
+  background-color: #e63950;
+}
+
+/* Plus button */
+.plus-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background: #4a3aff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(74, 58, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plus-btn:hover {
+  background: #6557ff;
+  box-shadow: 0 12px 30px rgba(74, 58, 255, 0.7);
+}
+
+/* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 40, 0.75);
+  backdrop-filter: blur(6px);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px 35px;
+  border-radius: 20px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 40px rgba(74, 58, 255, 0.3);
+}
+
+.modal-content h2 {
+  margin-bottom: 18px;
+  color: #4a3aff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+/* Modal buttons */
+.modal-content button {
+  margin-top: 12px;
+  padding: 12px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+#saveTask {
+  background-color: #4a3aff;
+  color: white;
+}
+
+#saveTask:hover {
+  background-color: #6557ff;
+}
+
+#closeModal {
+  background-color: #ddd;
+  color: #444;
+}
+
+#closeModal:hover {
+  background-color: #bbb;
+}
